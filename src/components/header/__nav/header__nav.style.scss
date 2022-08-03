@@ -1,0 +1,101 @@
+@import '../../../sass/var.scss';
+
+.header__nav {
+    display: flex;
+    column-gap: 1.5rem;
+    font-size: 1.25rem;
+
+    
+    &-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 15px 16px 15px;
+    }
+
+    &-link {
+        transition: 0.3s;
+        
+        &:hover {
+            color: $redPastel;
+        }
+    }
+}
+
+.burger__checkbox {
+    display: none;
+}
+
+.burger__btn {
+    display: none;
+    width: 40px;
+    height: 28px;
+    padding-top: 12px;
+    cursor: pointer;
+    background-color: #fff;
+
+    &-content,
+    &-content::before,
+    &-content::after {
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        border-radius: 10px;
+        background-color: $redPastel;
+        transition: transform 0.3s;
+    }
+
+    &-content::before {
+        content: '';
+        margin-top: -10px;
+    }
+
+    &-content::after {
+        content: '';
+        margin-top: 10px;
+    }
+}
+
+
+
+@media (max-width: $md) {
+    .header__nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10rem;
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+
+    .burger__btn {
+        display: block;
+    }
+
+    .burger__checkbox:checked ~ .header .burger__btn {
+        align-self: flex-end;
+    }
+    .burger__checkbox:checked ~ .header .burger__btn-content {
+        background-color: transparent;
+    }
+    .burger__checkbox:checked ~ .header .burger__btn-content::before {
+        margin-top: 0px;
+        transform: rotate(-45deg);
+    }
+    .burger__checkbox:checked ~ .header .burger__btn-content::after {
+        margin-top: 0px;
+        transform: rotate(45deg);
+    }
+
+    .burger__checkbox:checked ~ .header .header__nav-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+        padding: 1rem;
+    }
+
+    .burger__checkbox:checked ~ .header .header__nav {
+        display: flex;
+    }
+}

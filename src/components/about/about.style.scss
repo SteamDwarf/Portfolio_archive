@@ -1,0 +1,79 @@
+@import '../../sass/var.scss';
+
+.about {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+
+    &__title {
+        color: $darkGrey;
+        font-weight: 500;
+        font-size: 3rem;
+    }
+
+    /* &__description {
+        color: $lightGrey;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+    } */
+
+    &__cv-download {
+        width: 128px;
+        padding: 12px 24px;
+        font-size: 1.25rem;
+        color: #fff;
+        background-color: $redPastel;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $darkRedPastel;
+        }
+    }
+
+    &__img {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: $md) {
+    .about {
+        flex-direction: column-reverse;
+        justify-content: center;
+        row-gap: 5rem;
+
+        &__information {
+            align-items: center;
+        }
+
+        &__title{
+            text-align: center;
+        }
+
+        &__img {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .about {
+        &__title {
+            font-size: 2.5rem;
+        }
+
+        /* &__description {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        } */
+    }
+}

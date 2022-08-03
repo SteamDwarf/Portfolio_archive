@@ -1,0 +1,30 @@
+.carousel {
+    @apply relative;
+
+    &__arrow {
+        @apply absolute top-1/2 z-10 w-12 fill-redPastel 
+        transition hover:fill-darkRedPastel cursor-pointer;
+    }
+
+    &__arrow-left {
+        @apply rotate-180 left-5;
+    }
+
+    &__arrow-right {
+        @apply right-5;
+    }
+
+    &__container-wrapper {
+        @apply overflow-hidden w-5/6 h-full mx-auto rounded;
+        /* box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
+    }
+
+    &__container {
+        @apply flex w-full h-full transition-transform duration-300;
+    }
+
+    &__container > * {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+}

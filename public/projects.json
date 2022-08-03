@@ -1,0 +1,60 @@
+{
+    "projects": [
+        {
+            "name": "",
+            "description": "",
+            "technologies": "",
+            "images": [
+                "assets/projects-images/chatter/1.png",
+                "assets/projects-images/chatter/2.png",
+                "assets/projects-images/chatter/3.png",
+                "assets/projects-images/chatter/4.png"
+            ],
+            "sourceCode": "",
+            "projectLink": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "technologies": "",
+            "images": [
+                "assets/projects-images/hp-store/1.png"
+            ],
+            "sourceCode": "",
+            "projectLink": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "technologies": "",
+            "images": "",
+            "sourceCode": "",
+            "projectLink": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "technologies": "",
+            "images": "",
+            "sourceCode": "",
+            "projectLink": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "technologies": "",
+            "images": "",
+            "sourceCode": "",
+            "projectLink": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "technologies": "",
+            "images": "",
+            "sourceCode": "",
+            "projectLink": ""
+        }
+
+    ]
+}

@@ -1,0 +1,30 @@
+@import '../../sass/var.scss';
+
+.header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    /* box-shadow: 0px 5px 10px #aaa; */
+    box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
+    transition: all 0.5s;
+
+}
+
+@media(max-width: $md) {
+    .header {
+        /* margin-left: 40%; */
+        left: 0;
+        right: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .burger__checkbox:checked ~ .header {
+        box-shadow: 0px 5px 10px #aaa;
+        background-color: #fff;
+    }
+}
